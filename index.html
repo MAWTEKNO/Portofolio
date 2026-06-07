@@ -2,58 +2,40 @@
 <html lang="id" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <!-- =============================================
-         VIEWPORT: Mencegah auto-zoom pada iOS saat
-         input difokus, scale=1 menjaga rasio piksel.
-    ============================================= -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Portfolio Muhammad Alfin Winarno - Network Admin & Electrical Engineer">
+    
+    <meta name="description" content="MAW TEKNO - Portofolio Profesional Muhammad Alfin Winarno. Solusi Network Admin, FTTH, Jaringan Mikrotik, CCTV, dan Hardware Specialist di Lampung.">
+    <meta name="keywords" content="MAW TEKNO, MAWTEKNO, Muhammad Alfin Winarno, Portofolio MAW TEKNO, Network Admin Lampung, Alfin Winarno, mawtekno.github.io">
+    <meta name="author" content="Muhammad Alfin Winarno (MAW TEKNO)">
+    
     <meta name="theme-color" content="#020617">
-    <meta property="og:title" content="Muhammad Alfin Winarno | Portfolio">
-    <meta property="og:description" content="Solusi Jaringan, CCTV, dan IT Infrastructure oleh MAW TEKNO.">
-    <meta property="og:image" content="1.jpg">
-    <title>Muhammad Alfin Winarno | Portfolio Profesional</title>
+    
+    <title>MAW TEKNO - Portofolio Muhammad Alfin Winarno</title>
 
-    <!-- Preconnect untuk performa font lebih cepat -->
+    <meta property="og:title" content="MAW TEKNO | Muhammad Alfin Winarno Portfolio">
+    <meta property="og:description" content="Solusi Jaringan, FTTH, CCTV, dan IT Infrastructure Profesional oleh MAW TEKNO.">
+    <meta property="og:image" content="1.jpg">
+    <meta property="og:url" content="https://mawtekno.github.io/Portofolio/">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--
-        TIPOGRAFI:
-        - "Syne" (Display): Geometric, tegas — cocok untuk nama & heading besar.
-        - "DM Sans" (Body): Modern humanist, keterbacaan tinggi di semua ukuran layar.
-        Pasangan ini mencerminkan persona teknikal + profesional.
-    -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght=700;800&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- =============================================
-         SKIP LINK: Aksesibilitas keyboard/screen reader.
-         Memungkinkan user melewati navigasi ke konten utama.
-    ============================================= -->
     <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
 
-    <!-- =============================================
-         HAMBURGER MENU OVERLAY (Mobile/Tablet)
-         Thumb-Zone: Tombol menu di kiri atas,
-         nav drawer dari kanan (mudah dijangkau jempol kanan).
-    ============================================= -->
     <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
-    <!-- =============================================
-         NAVBAR — Fixed top, glass morphism.
-         Height: 64px mobile, 72px tablet, 80px desktop.
-         Touch target nav-toggle: 48x48px (>44px Fitts Law).
-    ============================================= -->
     <nav id="navbar" role="navigation" aria-label="Navigasi utama">
         <div class="container nav-container">
             <a href="#home" class="logo" aria-label="MAW TEKNO - Kembali ke halaman utama">
                 MAW <span>TEKNO</span>
             </a>
 
-            <!-- Hamburger: touch target 48x48px, ARIA role button -->
             <button
                 class="nav-toggle"
                 id="navToggle"
@@ -67,7 +49,6 @@
                 <span class="hamburger-bar"></span>
             </button>
 
-            <!-- Nav Desktop + Mobile Drawer -->
             <ul class="nav-links" id="navMenu" role="list">
                 <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
                 <li><a href="#about" class="nav-link" data-section="about">About</a></li>
@@ -79,31 +60,23 @@
         </div>
     </nav>
 
-    <!-- =============================================
-         MAIN CONTENT: id untuk skip-link aksesibilitas
-    ============================================= -->
     <main id="main-content">
 
-        <!-- ==================== HERO SECTION ==================== -->
         <section id="home" class="hero" aria-label="Hero - Perkenalan">
-            <!-- Noise texture overlay untuk depth visual -->
             <div class="hero-noise" aria-hidden="true"></div>
-            <!-- Grid garis dekoratif latar -->
             <div class="hero-grid" aria-hidden="true"></div>
 
             <div class="container hero-content">
-                <!-- Badge status online -->
                 <div class="hero-badge reveal">
                     <span class="badge-dot" aria-hidden="true"></span>
                     Available for Projects
                 </div>
 
                 <h2 class="hero-sub reveal">Network Admin & Electrical Engineer</h2>
-                <h1 class="hero-name reveal">Muhammad<br>Alfin Winarno</h1>
+                <h1 class="hero-name reveal">MAW TEKNO<br><span style="font-size: 0.6em; opacity: 0.9;">Muhammad Alfin Winarno</span></h1>
                 <p class="hero-moto reveal">"Dream like a King, do it like a Monk" — MAW TEKNO 🎬🎮🎼</p>
 
                 <div class="hero-cta reveal" role="group" aria-label="Tombol aksi utama">
-                    <!-- btn: min 44x44px touch target, padding cukup -->
                     <a href="#brands" class="btn btn-primary">
                         <i class="fas fa-layer-group" aria-hidden="true"></i>
                         Our Brands
@@ -121,27 +94,24 @@
                 </div>
             </div>
 
-            <!-- Scroll indicator animasi -->
             <div class="scroll-indicator" aria-hidden="true">
                 <div class="scroll-dot"></div>
             </div>
         </section>
 
-        <!-- ==================== ABOUT SECTION ==================== -->
         <section id="about" class="section-padding" aria-labelledby="about-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag reveal">Who I Am</span>
-                    <h2 class="section-title reveal" id="about-title">Professional<br>Profile</h2>
+                    <h2 class="section-title reveal" id="about-title">MAW TEKNO<br>Profile</h2>
                 </div>
 
                 <div class="about-grid">
-                    <!-- Foto profil dengan aspect-ratio tetap mencegah CLS -->
                     <div class="about-image-wrap reveal">
                         <div class="about-img-frame" aria-hidden="true">
                             <img
                                 src="1.jpg"
-                                alt="Foto profil Muhammad Alfin Winarno"
+                                alt="Foto profil Muhammad Alfin Winarno - MAW TEKNO"
                                 class="about-img"
                                 width="400"
                                 height="500"
@@ -149,7 +119,6 @@
                                 decoding="async"
                             >
                         </div>
-                        <!-- Stats chip bawah foto -->
                         <div class="about-stats" aria-label="Statistik singkat">
                             <div class="stat-chip">
                                 <strong>3+</strong>
@@ -166,7 +135,6 @@
                         <p>Saya adalah seorang profesional muda di bidang teknologi dan infrastruktur jaringan yang berbasis di Pesawaran, Lampung. Saat ini menempuh pendidikan S1 Teknik setelah menyelesaikan studi di SMK Telkom Lampung.</p>
                         <p>Memiliki keahlian mendalam dalam administrasi jaringan, instalasi fiber optik (FTTH), sistem keamanan CCTV, serta perbaikan perangkat elektronik dan mobile. Aktif membangun ekosistem teknologi melalui brand <strong>MAW TEKNO</strong> dan fashion fungsional melalui <strong>Lithsucher.id</strong>.</p>
 
-                        <!-- Tech tags -->
                         <div class="tech-tags" aria-label="Teknologi yang dikuasai">
                             <span class="tech-tag">Mikrotik</span>
                             <span class="tech-tag">FTTH</span>
@@ -180,7 +148,6 @@
             </div>
         </section>
 
-        <!-- ==================== SKILLS SECTION ==================== -->
         <section id="skills" class="section-padding skills-section" aria-labelledby="skills-title">
             <div class="container">
                 <div class="section-header">
@@ -188,13 +155,6 @@
                     <h2 class="section-title reveal" id="skills-title">Core<br>Capabilities</h2>
                 </div>
 
-                <!--
-                    GRID RESPONSIF:
-                    Mobile: 1 kolom
-                    Tablet: 2 kolom
-                    Desktop: 3 kolom
-                    Menggunakan CSS Grid dengan auto-fit
-                -->
                 <div class="skills-grid">
                     <article class="skill-card reveal" aria-labelledby="skill-net">
                         <div class="skill-icon-wrap" aria-hidden="true">
@@ -238,7 +198,6 @@
             </div>
         </section>
 
-        <!-- ==================== BRANDS SECTION ==================== -->
         <section id="brands" class="section-padding brands-section" aria-labelledby="brands-title">
             <div class="container">
                 <div class="section-header">
@@ -284,7 +243,6 @@
             </div>
         </section>
 
-        <!-- ==================== EXPERIENCE / TIMELINE SECTION ==================== -->
         <section id="experience" class="section-padding" aria-labelledby="exp-title">
             <div class="container">
                 <div class="section-header">
@@ -292,13 +250,7 @@
                     <h2 class="section-title reveal" id="exp-title">Education &<br>Experience</h2>
                 </div>
 
-                <!--
-                    TIMELINE GRID:
-                    Mobile/Tablet: 1 kolom (Education dulu, lalu Experience)
-                    Desktop: 2 kolom berdampingan
-                -->
                 <div class="timeline-grid">
-                    <!-- Kolom Kiri: Pendidikan -->
                     <div class="timeline-col">
                         <h3 class="timeline-col-title reveal">
                             <i class="fas fa-graduation-cap" aria-hidden="true"></i>
@@ -332,7 +284,6 @@
                         </ol>
                     </div>
 
-                    <!-- Kolom Kanan: Pengalaman Kerja -->
                     <div class="timeline-col">
                         <h3 class="timeline-col-title reveal">
                             <i class="fas fa-briefcase" aria-hidden="true"></i>
@@ -369,7 +320,6 @@
             </div>
         </section>
 
-        <!-- ==================== CONTACT SECTION ==================== -->
         <section id="contact" class="section-padding" aria-labelledby="contact-title">
             <div class="container">
                 <div class="section-header">
@@ -378,7 +328,6 @@
                 </div>
 
                 <div class="contact-layout">
-                    <!-- Info kontak kiri -->
                     <div class="contact-info reveal">
                         <p class="contact-intro">Ada proyek, pertanyaan, atau kolaborasi? Jangan ragu untuk menghubungi saya.</p>
 
@@ -413,15 +362,7 @@
                         </ul>
                     </div>
 
-                    <!-- Form kontak kanan -->
                     <div class="contact-form-wrap reveal">
-                        <!--
-                            FORM IMK COMPLIANCE:
-                            - autocomplete aktif untuk efisiensi mobile
-                            - type="email" → keyboard email otomatis di mobile
-                            - label eksplisit (sr-only) → aksesibilitas screen reader
-                            - font-size ≥ 16px pada input → mencegah auto-zoom iOS
-                        -->
                         <form
                             id="portfolio-form"
                             action="https://formspree.io/f/mdayjndq"
@@ -477,7 +418,6 @@
                                 <span id="message-error" class="field-error" role="alert" aria-live="polite"></span>
                             </div>
 
-                            <!-- Touch target: padding vertikal cukup agar ≥ 44px -->
                             <button
                                 type="submit"
                                 id="submit-btn"
@@ -488,7 +428,6 @@
                                 Kirim Pesan
                             </button>
 
-                            <!-- Status feedback setelah submit -->
                             <p
                                 id="form-status"
                                 class="form-status"
@@ -502,10 +441,7 @@
             </div>
         </section>
 
-    </main><!-- /main -->
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer role="contentinfo">
+    </main><footer role="contentinfo">
         <div class="container footer-inner">
             <p class="footer-copy">&copy; 2026 <strong>MAW_TEKNO</strong>. All rights reserved.</p>
             <nav class="social-icons" aria-label="Media sosial">
@@ -522,11 +458,6 @@
         </div>
     </footer>
 
-    <!-- =============================================
-         THEME TOGGLE BUTTON — Fixed bottom-right
-         Touch target: 52x52px (> 44px Fitts Law)
-         aria-label diupdate oleh JS saat tema berubah.
-    ============================================= -->
     <button
         id="toggle-btn"
         class="theme-toggle"
