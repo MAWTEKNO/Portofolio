@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport: mencegah auto-zoom iOS, viewport-fit untuk safe area notch -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>Muhammad Alfin Winarno | Network Admin & IT Professional – Lampung</title>
+    <meta name="description" content="Portfolio profesional Muhammad Alfin Winarno (MAW TEKNO) – Network Admin, FTTH, CCTV, dan Hardware Specialist berbasis di Pesawaran, Lampung. Hubungi via WhatsApp.">
+    <meta name="keywords" content="network admin lampung, FTTH installer, CCTV lampung, service laptop hp pesawaran, MAW TEKNO, Muhammad Alfin Winarno, fiber optik lampung">
+    <meta name="author" content="Muhammad Alfin Winarno">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f0f4f8" media="(prefers-color-scheme: light)">
+
+    <!-- ===== CANONICAL ===== -->
+    <link rel="canonical" href="https://mawtekno.id/">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mawtekno.id/">
+    <meta property="og:title" content="Muhammad Alfin Winarno | Network Admin & IT Professional – Lampung">
+    <meta property="og:description" content="Solusi jaringan, CCTV, dan IT Infrastructure profesional oleh MAW TEKNO. Pesawaran, Lampung.">
+    <meta property="og:image" content="https://mawtekno.id/1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="MAW TEKNO">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Alfin Winarno | Network Admin – Lampung">
+    <meta name="twitter:description" content="Solusi jaringan, CCTV, dan IT Infrastructure profesional oleh MAW TEKNO.">
+    <meta name="twitter:image" content="https://mawtekno.id/1.jpg">
+
+    <!-- ===== STRUCTURED DATA: LocalBusiness + Person ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://mawtekno.id/#business",
+          "name": "MAW TEKNO",
+          "description": "Layanan teknis profesional: solusi jaringan, CCTV, FTTH, dan service elektronik hardware di Lampung.",
+          "url": "https://mawtekno.id/",
+          "telephone": "+6285150872430",
+          "email": "muhammadalfin3105@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pesawaran",
+            "addressRegion": "Lampung",
+            "addressCountry": "ID"
+          },
+          "areaServed": ["Pesawaran", "Bandar Lampung", "Pringsewu", "Lampung"],
+          "sameAs": ["https://www.instagram.com/afnwnrn/", "https://www.linkedin.com/in/muhammad-alfin-winarno-9b4813416"],
+          "openingHours": "Mo-Su 08:00-21:00",
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://mawtekno.id/#person",
+          "name": "Muhammad Alfin Winarno",
+          "jobTitle": "Network Admin & IT Professional",
+          "url": "https://mawtekno.id/",
+          "sameAs": ["https://www.instagram.com/afnwnrn/", "https://www.linkedin.com/in/muhammad-alfin-winarno-9b4813416"],
+          "worksFor": { "@id": "https://mawtekno.id/#business" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mawtekno.id/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Apa layanan yang tersedia di MAW TEKNO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MAW TEKNO menyediakan layanan konfigurasi jaringan (Mikrotik/FTTH), instalasi CCTV, service HP dan laptop, serta konsultasi IT infrastruktur untuk wilayah Lampung."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bagaimana cara menghubungi MAW TEKNO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hubungi via WhatsApp di nomor +62 851-5087-2430 atau email ke muhammadalfin3105@gmail.com."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- ===== FONTS: Preconnect untuk performa ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--
+        Syne (Display): Geometric tegas — karakter teknikal kuat
+        DM Sans (Body): Humanist modern — keterbacaan tinggi semua ukuran
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.5 (patch security dari 6.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preload gambar hero untuk LCP -->
+    <link rel="preload" as="image" href="bg1.jpg" fetchpriority="high">
+</head>
+<body>
+
+    <!-- ===== SCROLL PROGRESS BAR (upgrade tambahan) ===== -->
+    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Progres scroll halaman" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-hidden="true">
+        <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+    </div>
+
+    <!-- ===== CURSOR GLOW (dekoratif, desktop only — upgrade tambahan) ===== -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- ===== SKIP LINK: Aksesibilitas keyboard/screen reader ===== -->
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+    <!-- ===== OVERLAY Mobile Nav ===== -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="MAW TEKNO – Kembali ke halaman utama">
+                MAW <span>TEKNO</span>
+            </a>
+
+            <button
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+                aria-controls="navMenu"
+                type="button"
+            >
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <ul class="nav-links" id="navMenu" role="list">
+                <li><a href="#home"       class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about"      class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills"     class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#brands"     class="nav-link" data-section="brands">Brands</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Timeline</a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                <li><a href="#faq"        class="nav-link" data-section="faq">FAQ</a></li>
+                <li><a href="#contact"    class="nav-link" data-section="contact">Contact</a></li>
+
+                <!-- Nav actions (mobile drawer) — upgrade tambahan -->
+                <li>
+                    <a href="cv/CV-Muhammad-Alfin-Winarno.pdf" class="btn btn-primary nav-cv-btn" download aria-label="Unduh CV Muhammad Alfin Winarno (PDF)">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        Download CV
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Nav actions kanan (desktop) — upgrade tambahan, tidak mengubah nav-links asli -->
+            <div class="nav-actions" aria-label="Aksi navigasi">
+                <a href="cv/CV-Muhammad-Alfin-Winarno.pdf" class="btn btn-primary btn-cv-desktop" download aria-label="Unduh CV Muhammad Alfin Winarno (PDF)">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
+
+        <!-- ══════════════ HERO ══════════════ -->
+        <section id="home" class="hero" aria-label="Perkenalan Muhammad Alfin Winarno">
+            <div class="hero-noise"    aria-hidden="true"></div>
+            <div class="hero-grid"     aria-hidden="true"></div>
+            <div class="hero-orb orb-blue"   aria-hidden="true"></div>
+            <div class="hero-orb orb-purple" aria-hidden="true"></div>
+
+            <div class="container hero-content">
+                <div class="hero-badge reveal" role="status">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    <span>Available for Projects</span>
+                </div>
+
+                <p class="hero-sub reveal">Network Admin,IT Professional &amp;  Electrical Engineering Student </p>
+                <h1 class="hero-name reveal">Muhammad<br>Alfin Winarno</h1>
+                <p class="hero-moto reveal">
+                    <em>"Dream like a King, do it like a Monk"</em>
+                    <span class="hero-brand" aria-label="MAW TEKNO">— MAW TEKNO</span>
+                </p>
+
+                <div class="hero-cta reveal" role="group" aria-label="Tombol aksi utama">
+                    <a href="#brands" class="btn btn-primary">
+                        <i class="fas fa-layer-group" aria-hidden="true"></i>
+                        Our Brands
+                    </a>
+                    <a
+                        href="https://wa.me/6285150872430?text=Halo%20MAW%20TEKNO%2C%20saya%20ingin%20bertanya..."
+                        class="btn btn-outline btn-wa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Hubungi via WhatsApp – buka di tab baru"
+                    >
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        WhatsApp
+                    </a>
+                    <!-- Tombol Download CV — upgrade tambahan. Ganti file di /cv/ dengan CV asli -->
+                    <a
+                        href="cv/CV-Muhammad-Alfin-Winarno.pdf"
+                        class="btn btn-outline btn-cv-hero"
+                        download
+                        aria-label="Unduh CV Muhammad Alfin Winarno dalam format PDF"
+                    >
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <!-- Social links di hero -->
+                <div class="hero-socials reveal" aria-label="Media sosial">
+                    <a href="https://www.linkedin.com/in/muhammad-alfin-winarno-9b4813416" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Muhammad Alfin Winarno">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/afnwnrn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @afnwnrn">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:muhammadalfin3105@gmail.com" aria-label="Email">
+                        <i class="far fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-dot"></div>
+            </div>
+        </section>
+
+        <!-- ══════════════ ABOUT ══════════════ -->
+        <section id="about" class="section-padding" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">Who I Am</span>
+                    <h2 class="section-title reveal" id="about-title">Professional<br>Profile</h2>
+                </header>
+
+                <div class="about-grid">
+                    <div class="about-image-wrap reveal">
+                        <div class="about-img-frame">
+                            <img
+                                src="1.jpg"
+                                alt="Foto profil Muhammad Alfin Winarno, Network Admin dari Pesawaran Lampung"
+                                class="about-img"
+                                width="400"
+                                height="500"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </div>
+                        <div class="about-stats" aria-label="Statistik singkat">
+                            <div class="stat-chip">
+                                <strong>3+</strong>
+                                <span>Tahun Pengalaman</span>
+                            </div>
+                            <div class="stat-chip">
+                                <strong>20+</strong>
+                                <span>Proyek Selesai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <p class="reveal">Saya adalah profesional muda di bidang teknologi dan infrastruktur jaringan, berbasis di <strong>Pesawaran, Lampung</strong>. Saat ini menempuh pendidikan S1 Teknik Elektro di Universitas Lampung setelah menyelesaikan studi di SMK Telkom Lampung jurusan Teknik Komunikasi &amp; Jaringan.</p>
+                        <p class="reveal">Memiliki keahlian mendalam dalam administrasi jaringan, instalasi fiber optik (FTTH), sistem keamanan CCTV, serta perbaikan perangkat elektronik dan mobile. Aktif membangun ekosistem teknologi melalui brand <strong>MAW TEKNO</strong> dan fashion fungsional melalui <strong>Lithsucher.id</strong>.</p>
+
+                        <div class="tech-tags reveal" aria-label="Teknologi dan keahlian">
+                            <span class="tech-tag">Mikrotik</span>
+                            <span class="tech-tag">FTTH</span>
+                            <span class="tech-tag">CCTV</span>
+                            <span class="tech-tag">Fiber Optik</span>
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Hardware Repair</span>
+                        </div>
+
+                        <!-- CTA inline di about -->
+                        <div class="about-cta reveal">
+                            <a
+                                href="https://wa.me/6285150872430?text=Halo%20MAW%2C%20saya%20tertarik%20untuk%20bekerjasama"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Diskusi Proyek
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ SKILLS ══════════════ -->
+        <section id="skills" class="section-padding skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">What I Do</span>
+                    <h2 class="section-title reveal" id="skills-title">Core<br>Capabilities</h2>
+                </header>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal" aria-labelledby="skill-net">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3 id="skill-net">Network Admin</h3>
+                            <p>Konfigurasi FTTH, Mikrotik, dan Network Security untuk efisiensi koneksi dan keandalan jaringan enterprise maupun SOHO.</p>
+                            <div
+                                class="skill-bar"
+                                role="progressbar"
+                                aria-valuenow="90"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-label="Level kemampuan Network Admin: 90 dari 100"
+                            >
+                                <div class="skill-fill" data-target="90"></div>
+                            </div>
+                            <span class="skill-level" aria-hidden="true">90%</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" aria-labelledby="skill-hw">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3 id="skill-hw">Hardware Specialist</h3>
+                            <p>Servis HP, laptop, dan instalasi sistem CCTV IP untuk keamanan terintegrasi. Diagnosa dan solusi cepat untuk perangkat elektronik.</p>
+                            <div
+                                class="skill-bar"
+                                role="progressbar"
+                                aria-valuenow="85"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-label="Level kemampuan Hardware: 85 dari 100"
+                            >
+                                <div class="skill-fill" data-target="85"></div>
+                            </div>
+                            <span class="skill-level" aria-hidden="true">85%</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" aria-labelledby="skill-sys">
+                        <div class="skill-icon-wrap" aria-hidden="true">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3 id="skill-sys">Logic &amp; Systems</h3>
+                            <p>Pemahaman pemrograman dasar, manajemen sistem perkantoran modern, dan otomasi proses berbasis teknologi.</p>
+                            <div
+                                class="skill-bar"
+                                role="progressbar"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-label="Level kemampuan Systems: 75 dari 100"
+                            >
+                                <div class="skill-fill" data-target="75"></div>
+                            </div>
+                            <span class="skill-level" aria-hidden="true">75%</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ BRANDS ══════════════ -->
+        <section id="brands" class="section-padding brands-section" aria-labelledby="brands-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">Ecosystem</span>
+                    <h2 class="section-title reveal" id="brands-title">Business<br>Units</h2>
+                </header>
+
+                <div class="brands-grid">
+                    <article class="brand-card brand-blue reveal" aria-labelledby="brand-maw">
+                        <div class="brand-accent" aria-hidden="true"></div>
+                        <div class="brand-icon" aria-hidden="true">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="brand-body">
+                            <h3 id="brand-maw">MAW TEKNO</h3>
+                            <p>Layanan teknis profesional untuk solusi jaringan (FTTH/Mikrotik), instalasi CCTV, dan service elektronik hardware di wilayah Lampung.</p>
+                            <div class="brand-tags">
+                                <span>Jaringan</span>
+                                <span>CCTV</span>
+                                <span>Hardware</span>
+                                <span>FTTH</span>
+                            </div>
+                        </div>
+                        <a
+                            href="https://wa.me/6285150872430?text=Halo%2C%20saya%20ingin%20tahu%20lebih%20tentang%20MAW%20TEKNO"
+                            class="brand-cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Hubungi MAW TEKNO via WhatsApp"
+                        >
+                            <span>Hubungi</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="brand-card brand-purple reveal" aria-labelledby="brand-lith">
+                        <div class="brand-accent" aria-hidden="true"></div>
+                        <div class="brand-icon" aria-hidden="true">
+                            <i class="fas fa-shirt"></i>
+                        </div>
+                        <div class="brand-body">
+                            <h3 id="brand-lith">Lithsucher.id</h3>
+                            <p>Brand apparel berbasis teknik dengan desain industrial dan fungsionalitas tinggi. Merepresentasikan identitas dunia teknologi dalam fashion.</p>
+                            <div class="brand-tags">
+                                <span>Apparel</span>
+                                <span>Industrial</span>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <a
+                            href="https://wa.me/6285150872430?text=Halo%2C%20saya%20ingin%20tahu%20tentang%20Lithsucher.id"
+                            class="brand-cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Tanya tentang Lithsucher.id via WhatsApp"
+                        >
+                            <span>Tanya</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ EXPERIENCE / TIMELINE ══════════════ -->
+        <section id="experience" class="section-padding" aria-labelledby="exp-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">Journey</span>
+                    <h2 class="section-title reveal" id="exp-title">Education &amp;<br>Experience</h2>
+                </header>
+
+                <div class="timeline-grid">
+                    <!-- Pendidikan -->
+                    <div class="timeline-col">
+                        <h3 class="timeline-col-title reveal">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            Education
+                        </h3>
+                        <ol class="timeline" aria-label="Riwayat pendidikan">
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2025">2025 – Sekarang</time>
+                                    <h4>Kuliah S1 Engineering</h4>
+                                    <p>Universitas Lampung – Teknik Elektro</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2022">2022 – 2025</time>
+                                    <h4>SMK Telkom Lampung</h4>
+                                    <p>Teknik Komunikasi &amp; Jaringan</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2019">2019 – 2022</time>
+                                    <h4>MTS Darul A'mal</h4>
+                                    <p>Minhadlul'ulum</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Pengalaman -->
+                    <div class="timeline-col">
+                        <h3 class="timeline-col-title reveal">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
+                            Experience
+                        </h3>
+                        <ol class="timeline" aria-label="Riwayat pengalaman kerja">
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2025">2025</time>
+                                    <h4>PT MMS Network</h4>
+                                    <p>Network &amp; FTTH Support Technician</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2024">2024</time>
+                                    <h4>IDT Pringsewu</h4>
+                                    <p>Praktek Kerja Lapangan (PKL)</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item reveal">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <time class="time-date" datetime="2022">2022 – 2024</time>
+                                    <h4>Digital Entrepreneur</h4>
+                                    <p>Account Trading &amp; Digital Commerce</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ ACHIEVEMENTS (upgrade tambahan) ══════════════ -->
+        <section id="achievements" class="section-padding achievements-section" aria-labelledby="ach-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">Track Record</span>
+                    <h2 class="section-title reveal" id="ach-title">Pencapaian &amp;<br>Kepercayaan</h2>
+                </header>
+
+                <div class="achievement-grid" aria-label="Statistik pencapaian">
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fas fa-diagram-project"></i></div>
+                        <span class="achievement-number" data-count="20" aria-hidden="true">0</span><span class="achievement-suffix" aria-hidden="true">+</span>
+                        <p class="achievement-label">Proyek Jaringan &amp; CCTV</p>
+                        <span class="sr-only">20 lebih proyek jaringan dan CCTV selesai</span>
+                    </div>
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fas fa-users"></i></div>
+                        <span class="achievement-number" data-count="50" aria-hidden="true">0</span><span class="achievement-suffix" aria-hidden="true">+</span>
+                        <p class="achievement-label">Pelanggan Terlayani</p>
+                        <span class="sr-only">50 lebih pelanggan terlayani</span>
+                    </div>
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></div>
+                        <span class="achievement-number" data-count="3" aria-hidden="true">0</span><span class="achievement-suffix" aria-hidden="true">+</span>
+                        <p class="achievement-label">Tahun Pengalaman</p>
+                        <span class="sr-only">3 lebih tahun pengalaman</span>
+                    </div>
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon" aria-hidden="true"><i class="fas fa-certificate"></i></div>
+                        <span class="achievement-number" data-count="2" aria-hidden="true">0</span><span class="achievement-suffix" aria-hidden="true">+</span>
+                        <p class="achievement-label">Sertifikasi &amp; Brand</p>
+                        <span class="sr-only">2 sertifikasi dan brand</span>
+                    </div>
+                </div>
+                <p class="achievement-note reveal">
+                    <em>Catatan: angka di atas dapat disesuaikan seiring bertambahnya proyek dan pengalaman.</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- ══════════════ FAQ ══════════════ -->
+        <section id="faq" class="section-padding faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">FAQ</span>
+                    <h2 class="section-title reveal" id="faq-title">Pertanyaan<br>Umum</h2>
+                </header>
+
+                <div class="faq-list reveal" role="list">
+                    <div class="faq-item" role="listitem">
+                        <button
+                            class="faq-btn"
+                            aria-expanded="false"
+                            aria-controls="faq-1"
+                            type="button"
+                        >
+                            <span>Apa saja layanan yang tersedia?</span>
+                            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" id="faq-1" role="region" hidden>
+                            <p>MAW TEKNO menyediakan: konfigurasi jaringan (Mikrotik, FTTH, VPN), instalasi &amp; maintenance CCTV IP, service laptop &amp; HP, serta konsultasi IT infrastruktur untuk rumah dan bisnis di wilayah Lampung.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button
+                            class="faq-btn"
+                            aria-expanded="false"
+                            aria-controls="faq-2"
+                            type="button"
+                        >
+                            <span>Berapa lama pengerjaan untuk instalasi jaringan?</span>
+                            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" id="faq-2" role="region" hidden>
+                            <p>Untuk instalasi jaringan SOHO (rumah/kantor kecil) biasanya selesai dalam 1–2 hari kerja. Proyek lebih besar seperti gedung bertingkat atau multi-site memerlukan survei awal untuk estimasi waktu yang akurat.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button
+                            class="faq-btn"
+                            aria-expanded="false"
+                            aria-controls="faq-3"
+                            type="button"
+                        >
+                            <span>Apakah melayani area luar Pesawaran?</span>
+                            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" id="faq-3" role="region" hidden>
+                            <p>Ya, MAW TEKNO juga melayani Bandar Lampung, Pringsewu, dan area sekitar Lampung. Untuk proyek di luar jangkauan rutin, silakan hubungi terlebih dahulu untuk konfirmasi ketersediaan dan biaya perjalanan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" role="listitem">
+                        <button
+                            class="faq-btn"
+                            aria-expanded="false"
+                            aria-controls="faq-4"
+                            type="button"
+                        >
+                            <span>Bagaimana cara memulai kolaborasi?</span>
+                            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" id="faq-4" role="region" hidden>
+                            <p>Mudah! Kirim pesan via WhatsApp atau form di bawah ini. Ceritakan kebutuhan Anda, dan saya akan merespons dalam waktu kurang dari 24 jam dengan solusi dan estimasi yang sesuai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ CONTACT ══════════════ -->
+        <section id="contact" class="section-padding" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag reveal">Get In Touch</span>
+                    <h2 class="section-title reveal" id="contact-title">Kirim Pesan<br>ke MAW</h2>
+                </header>
+
+                <div class="contact-layout">
+                    <!-- Info kontak -->
+                    <div class="contact-info reveal">
+                        <p class="contact-intro">Ada proyek, pertanyaan, atau kolaborasi? Hubungi saya — biasanya merespons dalam 24 jam.</p>
+
+                        <ul class="contact-list" aria-label="Informasi kontak">
+                            <li>
+                                <a
+                                    href="https://wa.me/6285150872430"
+                                    class="contact-item"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Hubungi via WhatsApp: 085150872430"
+                                >
+                                    <span class="contact-icon-wrap" aria-hidden="true">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </span>
+                                    <span class="contact-item-text">
+                                        <strong>WhatsApp</strong>
+                                        <em>+62 851-5087-2430</em>
+                                    </span>
+                                    <i class="fas fa-external-link-alt contact-ext" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="mailto:muhammadalfin3105@gmail.com"
+                                    class="contact-item"
+                                    aria-label="Email: muhammadalfin3105@gmail.com"
+                                >
+                                    <span class="contact-icon-wrap" aria-hidden="true">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                    <span class="contact-item-text">
+                                        <strong>Email</strong>
+                                        <em>muhammadalfin3105@gmail.com</em>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/afnwnrn/"
+                                    class="contact-item"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram: @afnwnrn – buka di tab baru"
+                                >
+                                    <span class="contact-icon-wrap" aria-hidden="true">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                    <span class="contact-item-text">
+                                        <strong>Instagram</strong>
+                                        <em>@afnwnrn</em>
+                                    </span>
+                                    <i class="fas fa-external-link-alt contact-ext" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/muhammad-alfin-winarno-9b4813416"
+                                    class="contact-item"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn: muhammad-alfin-winarno – buka di tab baru"
+                                >
+                                    <span class="contact-icon-wrap" aria-hidden="true">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </span>
+                                    <span class="contact-item-text">
+                                        <strong>LinkedIn</strong>
+                                        <em>muhammad-alfin-winarno-9b4813416</em>
+                                    </span>
+                                    <i class="fas fa-external-link-alt contact-ext" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Google Maps embed area layanan -->
+                        <div class="map-wrap" aria-label="Lokasi layanan: Pesawaran, Lampung">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126428.0!2d105.1!3d-5.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db3b5d47cf29%3A0xd86b3793a11a9da5!2sPesawaran%2C%20Kabupaten%20Pesawaran%2C%20Lampung!5e0!3m2!1sid!2sid!4v1"
+                                width="100%"
+                                height="200"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Peta lokasi area layanan MAW TEKNO – Pesawaran, Lampung"
+                            ></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Form kontak -->
+                    <div class="contact-form-wrap reveal">
+                        <form
+                            id="portfolio-form"
+                            action="https://formspree.io/f/mdayjndq"
+                            method="POST"
+                            novalidate
+                            aria-label="Form pengiriman pesan ke MAW TEKNO"
+                        >
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    Nama Lengkap
+                                    <span aria-hidden="true" class="required-mark">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-input"
+                                    placeholder="Contoh: Budi Santoso"
+                                    autocomplete="name"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="name-error"
+                                    minlength="2"
+                                >
+                                <span id="name-error" class="field-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    Email Aktif
+                                    <span aria-hidden="true" class="required-mark">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    placeholder="nama@email.com"
+                                    autocomplete="email"
+                                    inputmode="email"
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="email-error"
+                                >
+                                <span id="email-error" class="field-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Keperluan</label>
+                                <select id="subject" name="subject" class="form-input form-select" autocomplete="off">
+                                    <option value="">– Pilih keperluan –</option>
+                                    <option value="jaringan">Instalasi / Konfigurasi Jaringan</option>
+                                    <option value="cctv">Instalasi CCTV</option>
+                                    <option value="hardware">Service HP / Laptop</option>
+                                    <option value="konsultasi">Konsultasi IT</option>
+                                    <option value="kolaborasi">Kolaborasi / Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    Pesan Anda
+                                    <span aria-hidden="true" class="required-mark">*</span>
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-input form-textarea"
+                                    rows="5"
+                                    placeholder="Ceritakan kebutuhan atau pertanyaan Anda..."
+                                    required
+                                    aria-required="true"
+                                    aria-describedby="message-error"
+                                    minlength="10"
+                                ></textarea>
+                                <span id="message-error" class="field-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <button
+                                type="submit"
+                                id="submit-btn"
+                                class="btn btn-primary btn-full"
+                                aria-label="Kirim pesan"
+                            >
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Kirim Pesan
+                            </button>
+
+                            <p
+                                id="form-status"
+                                class="form-status"
+                                role="status"
+                                aria-live="polite"
+                                aria-atomic="true"
+                            ></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo" aria-label="MAW TEKNO – kembali ke atas">
+                    MAW <span>TEKNO</span>
+                </a>
+                <p class="footer-tagline">Network Admin,IT Professional &amp; Electrical Engineering Student – Pesawaran, Lampung</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navigasi footer">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#brands">Brands</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="footer-right">
+                <nav class="social-icons" aria-label="Media sosial">
+                    <a href="https://www.linkedin.com/in/muhammad-alfin-winarno-9b4813416" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Muhammad Alfin Winarno">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/afnwnrn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @afnwnrn">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/6285150872430" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp MAW TEKNO">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:muhammadalfin3105@gmail.com" aria-label="Email MAW TEKNO">
+                        <i class="far fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </nav>
+                <p class="footer-copy">&copy; 2026 <strong>MAW TEKNO</strong>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== THEME TOGGLE — Fixed bottom-right ===== -->
+    <button
+        id="toggle-btn"
+        class="theme-toggle"
+        aria-label="Ganti ke tema terang"
+        type="button"
+        title="Ganti tema"
+    >
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Kembali ke atas halaman"
+        type="button"
+        hidden
+    >
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
